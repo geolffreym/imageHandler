@@ -15,17 +15,17 @@ class New(CreateView):
                     'form': form
                 })
 
-        # Resize Image
-        the_new_dir = 'my/new/dir/thumb/'
+            # Resize Image
+            the_new_dir = 'my/new/dir/thumb/'
 
-        # Set output dir
-        img.set_output_dir(the_new_dir)
+            # Set output dir
+            img.set_output_dir(the_new_dir)
 
-        # Make thumb
-        # Return a string directory "my/new/dir/thumb/{the_image_named}.{format}"
-        thumb = img.thumb_create(width=60, height=60)
+            # Make thumb
+            # Return a string directory "my/new/dir/thumb/{the_image_named}.{format}"
+            thumb = img.thumb_create(width=60, height=60)
 
-        # Save in db?
-        # model = MyDbModel()
-        # model.my_pic = thumb
-        # model.save()
+            # Save in db?
+            # model = MyDbModel()
+            # model.my_pic = thumb
+            # model.save()
