@@ -14,7 +14,7 @@ class File(object):
     def handle_uploaded_file(self):
         """
         Join incoming file with chunks
-        :return: string
+        :return:string
         """""
         name = self.file.name
         local_dir = self.tmp_dir + '/' + name
@@ -29,7 +29,7 @@ class File(object):
     def get_file_dir(self):
         """
         Return the file fir
-        :return:
+        :return:string
         """""
         return self.local_dir
 
@@ -37,9 +37,9 @@ class File(object):
     def copy_file(dirt, new_dir):
         """
         Copy file from directory to directory
-        :param dirt: string
-        :param new_dir: string
-        :return: bool
+        :param dirt:string
+        :param new_dir:string
+        :return:bool
         """""
         return shutil.copy(dirt, new_dir)
 
@@ -47,9 +47,9 @@ class File(object):
     def move_file(dirt, new_dir):
         """
         Move file from directory to directory
-        :param dirt: string
-        :param new_dir: string
-        :return: bool
+        :param dirt:string
+        :param new_dir:string
+        :return:bool
         """""
         return shutil.move(dirt, new_dir)
 
@@ -57,7 +57,7 @@ class File(object):
     def remove_file(dirt):
         """
         Remove file from system
-        :param dirt: string
-        :return: bool
+        :param dirt:string
+        :return:bool
         """""
         return os.remove(dirt)

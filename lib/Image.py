@@ -31,7 +31,7 @@ class Img(File):
         """
         Simplify name to image
         :param name:string
-        :return:string
+        :return: string
         """
         return base64.urlsafe_b64encode(name) + '.' + self.get_file_format()
 
